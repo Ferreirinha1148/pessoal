@@ -1,14 +1,17 @@
-# Entrada de dados
-horas_normais = float(input("Digite o número de horas normais trabalhadas: "))
-horas_extras = float(input("Digite o número de horas extras trabalhadas: "))
+# Entrada: quantidade de sanduíches
+quantidade = int(input("Digite a quantidade de sanduíches a fazer: "))
 
-# Cálculo do salário bruto
-salario_bruto = (horas_normais * 10) + (horas_extras * 15)
+# Cálculos em gramas
+queijo_gramas = quantidade * 2 * 50
+presunto_gramas = quantidade * 50
+carne_gramas = quantidade * 100
 
-# Cálculo do salário líquido (desconto de 10%)
-salario_liquido = salario_bruto * 0.90
+# Conversão para quilos
+queijo_quilos = queijo_gramas / 1000
+presunto_quilos = presunto_gramas / 1000
+carne_quilos = carne_gramas / 1000
 
 # Saída dos resultados
-print("Salário bruto: R$", salario_bruto)
-print("Salário líquido: R$", salario_liquido)
-
+print("Queijo (kg):", queijo_quilos)
+print("Presunto (kg):", presunto_quilos)
+print("Carne (kg):", carne_quilos)
